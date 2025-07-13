@@ -1,0 +1,26 @@
+jwt:
+  secret: mySuperSecretKeyForJwtSigning123456
+  expiration: 3600000   # 1 час в мс
+
+spring:
+  http:
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+  mvc:
+    contentnegotiation:
+      default-content-type: text/html;charset=UTF-8
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    prometheus:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true

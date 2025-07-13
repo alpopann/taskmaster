@@ -1,0 +1,39 @@
+# Maven build directories
+# Ignore all target folders (root and submodules)
+target/
+**/target/
+
+# Keep Maven Wrapper JAR and properties
+!/.mvn/wrapper/maven-wrapper.jar
+!/.mvn/wrapper/maven-wrapper.properties
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+
+### Eclipse ###
+.project
+.classpath
+.settings/
+
+### NetBeans ###
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### OS-specific ###
+.DS_Store
+Thumbs.db
+
+### Logs and temp files ###
+*.log
+
+### Compiled files ###
+*.class
